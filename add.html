@@ -55,12 +55,12 @@
                 </div>
                 <nav class="navbar-sidebar2">
                     <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub">
+                        <li>
                             <a class="js-arrow" href="index.html">
                                 <i class="fas fa-tachometer-alt"></i>Overview
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="add.html">
                                 <i class="fas fa-group"></i>Add Debtor</a>
                         </li>
@@ -147,7 +147,7 @@
                                         </div>
                                         <div class="account-dropdown__item">
                                             <a href="#">
-                                                <i class="zmdi zmdi-settings"></i>Settings</a>
+                                                <i class="zmdi zmdi-settings"></i>Setting</a>
                                         </div>
                                         <div class="account-dropdown__item">
                                             <a href="#">
@@ -187,153 +187,77 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">overview</h2>
+                                    <h2 class="title-1">Add Debtor</h2>
                                     <!--<button class="au-btn au-btn-icon au-btn--blue">
                                         <i class="zmdi zmdi-plus"></i>add item</button>-->
                                 </div>
                             </div>
-                        </div>
-                        <div class="row m-t-25">
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c1">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i class="zmdi zmdi-account-o"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>100</h2>
-                                                <span><strong>Number of debtors</strong></span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart1"></canvas>
-                                        </div>
-                                    </div>
+                        </div> <br>
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>KSG Debtor</strong>
+                                    <small> Form</small>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c2">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="text">
-                                                <h2>Ksh.500,000</h2>
-                                                <span><strong>Amount of debt paid</strong></span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart2"></canvas>
-                                        </div>
+                                <div class="card-body card-block">
+                                    <div class="form-group">
+                                        <label for="client" class=" form-control-label">Name of Client</label>
+                                        <input type="text" id="client" class="form-control">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="overview-item overview-item--c3">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="text">
-                                                <h2>Ksh.20,000,000</h2>
-                                                <span><strong>Total Debt</strong></span>
+                                    <div class="form-group">
+                                        <label for="payment_history" class=" form-control-label">Payment History</label>
+                                        <input type="text" id="payment_history" class="form-control">
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-8">
+                                            <div class="form-group">
+                                                <label for="lso" class=" form-control-label">LSO Number</label>
+                                                <input type="text" id="lso" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart4"></canvas>
+                                        <div class="col-8">
+                                            <div class="form-group">
+                                                <label for="previous_debt" class=" form-control-label">Amount of Previous Debt (in Ksh.)</label>
+                                                <input type="text" id="previous_debt" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="form-group">
+                                                <label for="additional_debt" class=" form-control-label">Amount of Additional Debt (in Ksh.)</label>
+                                                <input type="text" id="additional_debt" class="form-control">
+                                            </div>
+                                        </div> 
+                                        <div class="col-8">
+                                            <div class="form-group">
+                                                <label for="balance" class=" form-control-label">Total Outstanding Balance (in Ksh.)</label>
+                                                <input type="text" id="balance" class="form-control">
+                                            </div>
+                                        </div>
+                                </div>        
+                                    <button type="submit" class="btn btn-success btn-block">
+                                        <i class="fa fa-dot-circle-o"></i> Add Debtor
+                                    </button> <br> <br>
+
+                                    <p class="text-center" style="color:black">OR</p> <br>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <button class="btn btn-primary btn-block">Upload Debtor List</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row m-t-30">
-                            <div class="col-md-12">
-                                <!-- DATA TABLE-->
-                                <h3 class="title-5 m-b-35">Debt Activity</h3>
-                                <div class="table-responsive m-b-40">
-                                    <table class="table table-borderless table-data3">
-                                        <thead>
-                                            <tr>
-                                                <th>Date of Last Payment</th>
-                                                <th>Name of Debtor</th>
-                                                <th>Previous Debt Amount</th>
-                                                <th>Additional Debt Amount</th>
-                                                <th>Total Outstanding Balance</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2020/02/02</td>
-                                                <td>Kenya School of Government</td>
-                                                <td>Ksh. 30,000,000</td>
-                                                <td>Ksh. 400,000</td>
-                                                <td>Ksh. 30,400,000</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                        
 
+
+
+                    </div>
+                </div>
+            </div>            
             <section>
                 <div class="container-fluid">
                     <div class="row">
