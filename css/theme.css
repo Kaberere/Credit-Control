@@ -4355,7 +4355,7 @@ section {
 }
 
 .table-data thead tr td {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     color: #808080;
     text-transform: uppercase;
@@ -4390,7 +4390,7 @@ section {
 }
 
 .table-data__info span a {
-    font-size: 12px;
+    font-size: 14px;
     color: #999;
 }
 
@@ -4488,8 +4488,8 @@ section {
 }
 
 .table-data2.table thead th {
-    font-size: 12px;
-    color: #555;
+    font-size: 14px;
+    color: #000000;
     text-transform: uppercase;
     border: none;
     font-weight: 600;
@@ -4541,8 +4541,8 @@ section {
 }
 
 .table-data2.table tbody td {
-    font-size: 14px;
-    color: #808080;
+    font-size: 16px;
+    color: #000000;
     vertical-align: middle;
     padding: 25px 40px;
     padding-right: 10px;
@@ -4674,34 +4674,34 @@ section {
 }
 
 .table-data3 thead tr th {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     font-weight: 400;
     text-transform: capitalize;
     padding: 18px 40px;
-    padding-right: 10px;
+    padding-right: 14px;
 }
 
 .table-data3 thead tr th:first-child {
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    border-top-left-radius: 3px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
 }
 
 .table-data3 thead tr th:last-child {
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-radius-topright: 3px;
-    border-top-right-radius: 3px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
 }
 
 .table-data3 thead tr th:last-child {
     text-align: right;
-    padding-right: 50px;
+    padding-right: 70px;
 }
 
 .table-data3 tbody tr td:last-child {
     text-align: right;
-    padding-right: 50px;
+    padding-right: 70px;
 }
 
 .table-data3 tbody tr {
@@ -4724,10 +4724,10 @@ section {
 .table-data3 tbody td {
     border-bottom: 1px solid #f5f5f5;
     background: #fff;
-    font-size: 14px;
-    color: #808080;
-    padding: 12px 40px;
-    padding-right: 10px;
+    font-size: 16px;
+    color: #000000;
+    padding: 18px 40px;
+    padding-right: 12px;
 }
 
 .table-data3 tbody td.process {
