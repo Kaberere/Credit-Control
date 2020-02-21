@@ -60,11 +60,11 @@
                                 <i class="fas fa-tachometer-alt"></i>Overview
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="add.html">
                                 <i class="fas fa-group"></i>Add Debtor</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="edit_debtor_table.html">
                                 <i class="fas fa-edit"></i>Edit Debtor List</a>
                         </li>
@@ -169,37 +169,46 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Add Debtor</h2>
+                                    <h2 class="title-1">Edit Debtor</h2>
                                     <!--<button class="au-btn au-btn-icon au-btn--blue">
                                         <i class="zmdi zmdi-plus"></i>add item</button>-->
                                 </div>
                             </div>
                         </div> <br>
+                        <!--Accordion wrapper-->
+                        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>KSG Debtor</strong>
-                                    <small> Form</small>
-                                </div>
+                        <!-- Accordion card -->
+                        <div class="card">
+  
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne1">
+                            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                <h5 class="mb-0" style="color:blue">Kenya School of Government <i class="fas fa-angle-down rotate-icon"></i></h5>
+                            </a>
+                        </div>
+  
+                        <!-- Card body -->
+                        <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                            <div class="card-body">
                                 <div class="card-body card-block">
                                     <div class="row form-group">
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="lso" class=" form-control-label" style="color:black">Debtor Code</label>
-                                                <input type="text" id="lso" class="form-control">
+                                                <input type="text" id="lso" class="form-control" readonly>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="lso" class=" form-control-label" style="color:black">Name of Client</label>
-                                                <input type="text" id="lso" class="form-control">
+                                                <input type="text" id="lso" class="form-control" readonly>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="lso" class=" form-control-label" style="color:black">LSO Number</label>
-                                                <input type="text" id="lso" class="form-control">
+                                                <input type="text" id="lso" class="form-control" readonly>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -234,30 +243,25 @@
                                         </div> 
                                         <div class="col-12">
                                             <div class="form-group">
+                                                <label for="balance" class=" form-control-label" style="color:black">Payment History</label>
+                                                <input type="text" id="balance" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
                                                 <label for="balance" class=" form-control-label" style="color:black">Total Outstanding Balance (in Ksh.)</label>
                                                 <input type="text" id="balance" class="form-control">
                                             </div>
                                         </div>
                                 </div>        
                                     <button type="submit" class="btn btn-success btn-block">
-                                        <i class="fa fa-dot-circle-o"></i> Add Debtor
-                                    </button> <br> <br>
-
-                                    <p class="text-center" style="color:black">OR</p> <br>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col text-center">
-                                                <button class="btn btn-primary btn-block">Upload Debtor List</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                        <i class="fa fa-dot-circle-o"></i> Save
+                                    </button>
                             </div>
                         </div>
-
-                        
-
-
+  
+                        </div>
+                        </div>
 
                     </div>
                 </div>

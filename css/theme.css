@@ -4244,8 +4244,8 @@ section {
     font-weight: 400;
     text-transform: capitalize;
     line-height: 1;
-    padding: 22px 40px;
-    white-space: nowrap;
+    padding: 10px 12px;
+    white-space: wrap;
 }
 
 .table-earning thead th.text-right {
@@ -4254,18 +4254,19 @@ section {
 }
 
 .table-earning tbody td {
-    color: #808080;
-    padding: 12px 40px;
-    white-space: nowrap;
+    color: #000000;
+    padding: 10px 12px;
+    white-space: wrap;
+    overflow-wrap: break-word;
 }
 
 .table-earning tbody td.text-right {
     padding-left: 15px;
-    padding-right: 65px;
+    padding-right: 30px;
 }
 
 .table-earning tbody tr:hover td {
-    color: #555;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -4342,7 +4343,7 @@ section {
 
 .table-style1 .table td {
     font-size: 14px;
-    color: #808080;
+    color: #000000;
     border-top: none;
     border-bottom: 1px solid #f2f2f2;
     padding: 12px 6px;
@@ -4357,7 +4358,7 @@ section {
 .table-data thead tr td {
     font-size: 14px;
     font-weight: 600;
-    color: #808080;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -4384,18 +4385,18 @@ section {
 
 .table-data__info h6 {
     font-size: 14px;
-    color: #808080;
+    color: #000000;
     text-transform: capitalize;
     font-weight: 400;
 }
 
 .table-data__info span a {
     font-size: 14px;
-    color: #999;
+    color: #000000;
 }
 
 .table-data__info span a:hover {
-    color: #666;
+    color: #000000;
 }
 
 .more {
@@ -4491,12 +4492,14 @@ section {
     font-size: 14px;
     color: #000000;
     text-transform: uppercase;
-    border: none;
+    border: 1px;
     font-weight: 600;
     vertical-align: top;
-    padding: 15px 40px;
-    padding-right: 10px;
+    padding: 25px 27px;
+    padding-right: 5px;
 }
+
+
 
 .table-data2.table thead th:first-child {
     padding-right: 0;
@@ -4504,6 +4507,7 @@ section {
 
 .table-data2.table tbody {
     background: #fff;
+    padding-right: 5px;
 }
 
 .table-data2.table tbody tr td:first-child {
@@ -4544,7 +4548,7 @@ section {
     font-size: 16px;
     color: #000000;
     vertical-align: middle;
-    padding: 25px 40px;
+    padding: 25px 27px;
     padding-right: 10px;
     border: none;
 }
