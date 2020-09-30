@@ -186,33 +186,51 @@
                                     <div class="row form-group">
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="lso" class=" form-control-label" style="color:black">Debtor Code</label>
-                                                <input type="text" id="lso" class="form-control">
+                                                <label for="debtor_code" class=" form-control-label" style="color:black">Debtor Code</label>
+                                                <input type="text" id="debtor_code" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="lso" class=" form-control-label" style="color:black">Name of Client</label>
-                                                <input type="text" id="lso" class="form-control">
+                                                <label for="client_name" class=" form-control-label" style="color:black">Name of Client</label>
+                                                <input type="text" id="client_name" class="form-control">
+                                            </div>
+                                        </div> <br>
+                                        <div class="col-12">
+                                            <form>
+                                                <p style="color:black">Invoice (Upload Invoice file)</p> <br>
+                                                <div class="custom-file mb-3">
+                                                  <input type="file" class="custom-file-input" id="customFile" name="filename">
+                                                  <label class="custom-file-label" for="customFile">Choose client's invoice</label>
+                                                </div>
+                                            </form>
+                                        </div> <br> <br> <br>
+                                        <div class="col-12">
+                                            <form>
+                                                <p style="color:black">LSO (Upload LSO file)</p> <br>
+                                                <div class="custom-file mb-3">
+                                                  <input type="file" class="custom-file-input" id="customFile" name="filename">
+                                                  <label class="custom-file-label" for="customFile">Choose client's LSO</label>
+                                                </div>
+                                            </form>
+                                        </div> <br> <br> <br>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="vat" class=" form-control-label" style="color:black">VAT (in Ksh.)</label>
+                                                <input type="text" id="vat" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="lso" class=" form-control-label" style="color:black">LSO Number</label>
-                                                <input type="text" id="lso" class="form-control">
+                                                <label for="withholding_tax" class=" form-control-label" style="color:black">Withholding Tax (in Ksh.)</label>
+                                                <input type="text" id="withholding_tax" class="form-control">
                                             </div>
-                                        </div>
+                                        </div> 
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="balance" class=" form-control-label" style="color:black">Payment History</label>
-                                                <input type="text" id="balance" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="lso" class=" form-control-label" style="color:black">Withholding Tax (in Ksh.)</label>
-                                                <input type="text" id="lso" class="form-control">
-                                            </div>
+                                                <label for="description" style="color:black">Description</label>
+                                                <textarea class="form-control" rows="5" id="description"></textarea>
+                                              </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
@@ -222,21 +240,18 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="additional_debt" class=" form-control-label" style="color:black">Amount of Additional Debt (in Ksh.)</label>
-                                                <input type="text" id="additional_debt" class="form-control">
+                                                <label for="payment_history" class=" form-control-label" style="color:black">Payment History (in Ksh.)</label>
+                                                <input type="text" id="payment_history" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="lso" class=" form-control-label" style="color:black">Invoice Number</label>
-                                                <input type="text" id="lso" class="form-control">
-                                            </div>
-                                        </div> 
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="balance" class=" form-control-label" style="color:black">Total Outstanding Balance (in Ksh.)</label>
-                                                <input type="text" id="balance" class="form-control">
-                                            </div>
+                                            <form>
+                                                <p style="color:black">Credit Note Certificate (Upload credit note certificate file)</p> <br>
+                                                <div class="custom-file mb-3">
+                                                  <input type="file" class="custom-file-input" id="customFile" name="filename">
+                                                  <label class="custom-file-label" for="customFile">Choose client's credit note certificate</label>
+                                                </div>
+                                            </form>
                                         </div>
                                 </div>        
                                     <button type="submit" class="btn btn-success btn-block">
